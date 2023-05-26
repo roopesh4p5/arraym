@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        "use strict";
+        
+        // let user = {
+        //   name: "John",        //this is to add method or an key values in the object
+        //   age: 30
+        // };
+        // console.log(user);
+        // user.gender="male"
+        // user.sayHi = function() {
+        //   alert("Hello!");
+        // };
+        
+        // user.sayHi(); // Hello!
+        // console.log(user);
+
+
+        // let user = {
+        //   name: "John",   
+        //   age: 30
+        // };
+
+        // user.hello =function(){
+        //     return this.age;
+        // }
+        // console.log(user.hello());         //you wont get the output in console.log(user)  i.efunction
+
+
+
+        
+// let user = { name: "John",age:30 };
+// // let admin = { name: "Admin" };
+
+// user.sayHi=function sayHi() {
+//   alert( this.name );
+// //   return this
+// }
+
+// user.say =function say() {
+//   console.log( this.age );
+// //   return this
+
+// }
+
+// // use the same function in two objects
+// // user.say= say;
+// // user.sayHi = sayHi;
+// // admin.f= sayHi;
+// console.log(user);
+// console.log(user.say);
+
+// admin.f = sayHi;
+
+// these calls have different this
+// "this" inside the function is the object "before the dot"
+// user.say(); // John  (this == user)
+// user.sayHi(); // John  (this == user)
+// admin.f(); // Admin  (this == admin)
+
+// admin['f'](); // Admin (dot or square brackets access the method – doesn't matter)
+
+
+
+// let user={
+//     for:"roovi",
+//     let :"farhan",
+  
+// }
+
+// user.say=function (){
+//     alert(this.for)
+// }
+// console.log(user.say())
+// console.log(user)
+
+
+
+
+
+// function User() {
+//   alert(new.target);
+// }
+
+// // without "new":
+// User(); // undefined
+
+// // with "new":
+// new User(); // function User { ... }
+    
+
+
+// function BigUser() {
+
+// this.name = "John";
+
+// return { name: "Godzilla" };  // <-- returns this object
+// }
+
+// alert( new BigUser().name );  // Godzilla, got that object
+
+
+// ===============================================================================================================================================================
+// Constructor functions or, briefly, constructors, are regular functions, but there’s a common agreement to name them with capital letter first.
+// Constructor functions should only be called using new. Such a call implies a creation of empty this at the start and returning the populated one at the end.
+// We can use constructor functions to make multiple similar objects.
+
+// JavaScript provides constructor functions for many built-in language objects: like Date for dates, Set for sets and others that we plan to study.
+// ===============================================================================================================================================================
+
+
+
+
+
+// function acc(val){
+//     this.value=val;
+//     this.read = function() {
+//     this.value += +prompt("enter the value",0)
+//     }
+// }
+
+
+// let ac= new acc(1);
+// ac.read();
+// ac.read();
+// alert(ac.value)
+// console.log(ac)
+
+
+
+// let user={}
+//  let id = Symbol("id");
+//  user[id]=2;
+// user.id=2;
+// user.id=3;
+// console.log(user.id==user[id])
+
+// let user={}
+// let a=Symbol();
+// user[a]=12;
+
+// console.log(typeof(a));
+
+
+//  console.log(user.id==user2.id)
+
+
+// let a=Symbol("name");
+// let b=Symbol("name");
+
+// cls[a]="abhi";
+// cls[b]="abhi";
+console.log(cls)
+
+// user[a]=30;
+// user2[b]=30;
+// console.log(user)
+// console.log(user2)
+// console.log(a===b);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let dt={
+
+}
+
+let a=Symbol("phno");
+let b=Symbol("phno");
+dt[a]=9000;
+dt[b]=9000;
+
+
+console.log(dt)
+
+console.log(a==b)
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+</html>
